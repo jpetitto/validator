@@ -29,7 +29,7 @@ layout.setValidator(new Validator() {
 
 ## Download
 ```groovy
-compile 'com.johnpetitto.validator:validator:1.0.0'
+compile 'com.johnpetitto.validator:validator:1.0.1'
 ```
 
 ## License
