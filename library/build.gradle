@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 26
@@ -22,4 +23,13 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:design:26.0.1'
+}
+
+publish {
+    userOrg = 'jpetitto'
+    groupId = 'com.johnpetitto.validator'
+    artifactId = 'validator'
+    publishVersion = '1.0.0'
+    desc = 'A tiny library for easily validating TextInputLayouts in Android'
+    website = 'https://github.com/jpetitto/validator'
 }
