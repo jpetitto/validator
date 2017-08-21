@@ -29,15 +29,7 @@ layout.setValidator(new Validator() {
 
 ## Download
 ```groovy
-allprojects {
-   repositories {
-       maven { url 'https://jitpack.io' }
-   }
-}
-
-dependencies {
-   compile 'com.github.jpetitto:validator:1.0.0'
-}
+compile 'com.johnpetitto.validator:validator:1.0.0'
 ```
 
 ## License
