@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Validator</string>
+    
+    <string name="name">Name</string>
+    <string name="name_error">Must be at least 6 characters</string>
+    <string name="email">Email</string>
+    <string name="email_error">Enter a valid email</string>
+    <string name="phone">Phone number</string>
+    <string name="phone_error">Enter a valid phone number</string>
+    <string name="password">Password</string>
+    <string name="password_error">Must be at least 8 characters</string>
+    <string name="confirm">Confirm password</string>
+    <string name="confirm_error">Passwords do not match</string>
+    <string name="submit">Submit</string>
+    <string name="success">All inputs are valid!</string>
+</resources>
