@@ -8,7 +8,7 @@ android {
     defaultConfig {
         minSdkVersion 14
         versionCode 1
-        versionName "1.0.0"
+        versionName "1.0.1"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -29,7 +29,7 @@ publish {
     userOrg = 'jpetitto'
     groupId = 'com.johnpetitto.validator'
     artifactId = 'validator'
-    publishVersion = '1.0.0'
+    publishVersion = '1.0.1'
     desc = 'A tiny library for easily validating TextInputLayouts in Android'
     website = 'https://github.com/jpetitto/validator'
 }
