@@ -3,7 +3,6 @@ package com.johnpetitto.validator;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.design.widget.TextInputLayout;
 import android.util.AttributeSet;
 import android.widget.EditText;
@@ -83,16 +82,6 @@ public class ValidatingTextInputLayout extends TextInputLayout {
     public final void setErrorEnabled(boolean enabled) {
         super.setErrorEnabled(enabled);
     }
-
-    /**
-     * Throws an {@code UnsupportedOperationException} since this method should only be used by
-     * {@code ValidatingTextInputLayout} internally.
-     * */
-    @Override
-    public final void setError(@Nullable CharSequence error) {
-        throw new UnsupportedOperationException("This is to be used internally by" +
-                "ValidatingTextInputLayout only.");
-}
 
     /** Set a {@link Validator} for validating the contained {@code EditText} input text. */
     public void setValidator(@NonNull Validator validator) {
