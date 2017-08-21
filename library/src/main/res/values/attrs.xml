@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ValidatingTextInputLayout">
+        <attr name="errorLabel" format="string" />
+        <attr name="validator" format="enum">
+            <enum name="email" value="1" />
+            <enum name="phone" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>
