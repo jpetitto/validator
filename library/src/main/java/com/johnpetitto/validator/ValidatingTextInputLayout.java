@@ -58,7 +58,6 @@ public class ValidatingTextInputLayout extends TextInputLayout {
 
     public ValidatingTextInputLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        setErrorEnabled(true);
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ValidatingTextInputLayout);
 
@@ -75,12 +74,6 @@ public class ValidatingTextInputLayout extends TextInputLayout {
         }
 
         a.recycle();
-    }
-
-    /** Only call this if you want to disable validation at runtime. */
-    @Override
-    public final void setErrorEnabled(boolean enabled) {
-        super.setErrorEnabled(enabled);
     }
 
     /** Set a {@link Validator} for validating the contained {@code EditText} input text. */
