@@ -25,6 +25,8 @@ layout.setValidator(new Validator() {
 });
 ```
 
+To validate, simply call `validate()` on the `ValidatingTextInputLayout`.
+
 `Validators` provides a handful of predefined validators, including email and phone validation, which you can set with the `app:validator` tag. It also contains a helpful function for validating multiple `ValidatingTextInputLayout` objects at once.
 
 For a more comprehensive introduction, refer to [this blog post](http://johnpetitto.com/validator).
