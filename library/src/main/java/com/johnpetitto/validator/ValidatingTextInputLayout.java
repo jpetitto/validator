@@ -7,8 +7,10 @@ import android.support.design.widget.TextInputLayout;
 import android.util.AttributeSet;
 import android.widget.EditText;
 
-/** An extension of {@code TextInputLayout} that validates the text of its child {@code EditText}
+/**
+ * An extension of {@code TextInputLayout} that validates the text of its child {@code EditText}
  * and displays an error when the input is invalid.
+ *
  * <p>
  * Adding a {@code ValidatingTextInputLayout} to your XML layout file is analogous to adding a
  * {@code TextInputLayout}:
@@ -26,6 +28,7 @@ import android.widget.EditText;
  * </com.johnpetitto.validator.ValidatingTextInputLayout>
  * }
  * </pre>
+ *
  * To set a {@link Validator} for your {@code ValidatingTextInputLayout}, call
  * {@link #setValidator(Validator)}:
  * <pre><code>
@@ -36,10 +39,17 @@ import android.widget.EditText;
  *     }
  * });
  * </code></pre>
+ *
+ * To validate, simply call {@link #validate()}.
+ *
+ * <p>
  * There are a handful of predefined validators in {@link Validators}, as well as a utility for
  * validating multiple {@link Validator} objects at once. You can use either the
  * {@link Validators#EMAIL} or {@link Validators#PHONE} validators in XML with the
  * {@code app:validator} tag.
+ *
+ * @see <a href="http://johnpetitto.com/validator" target="_blank">Introductory Blog Post for
+ * Validator</a>
  */
 public class ValidatingTextInputLayout extends TextInputLayout {
     private static final int EMAIL_VALIDATOR = 1;
@@ -106,13 +116,13 @@ public class ValidatingTextInputLayout extends TextInputLayout {
 
         boolean valid = validator.isValid(input.toString());
         if (valid) {
-            super.setError(null);
+            setError(null);
         } else {
             if (errorLabel == null) {
                 throw new IllegalStateException("An error label must be set when validating an " +
                         "invalid input; call setErrorLabel or app:errorLabel first.");
             }
-            super.setError(errorLabel);
+            setError(errorLabel);
         }
 
         return valid;
