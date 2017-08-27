@@ -95,7 +95,7 @@ public class ValidatingTextInputLayout extends TextInputLayout {
      */
     public boolean validate() {
         if (validator == null) {
-            throw new IllegalStateException("A Validator must be set; call setValidator first");
+            throw new IllegalStateException("A Validator must be set; call setValidator first.");
         }
 
         CharSequence input = "";

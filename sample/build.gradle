@@ -21,7 +21,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':library')
-    compile 'com.android.support:appcompat-v7:26.0.1'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':library')
+    implementation "com.android.support:appcompat-v7:$support_version"
 }
