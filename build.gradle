@@ -1,6 +1,6 @@
 buildscript {
     ext.version = '1.0.2'
-    ext.support_version = '26.0.1'
+    ext.support_version = '26.0.2'
 
     repositories {
         jcenter()
